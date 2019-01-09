@@ -38,8 +38,8 @@ from statsmodels.tsa.arima_model import ARIMA
 from sklearn.metrics import mean_squared_error
 
 #DIRECTORY
-series1 = read_csv('C:/Users/aashi/Desktop/DataSet/Segment5/trainingdatatimeformat.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
-series2 = read_csv('C:/Users/aashi/Desktop/DataSet/Segment5/testdata.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
+series1 = read_csv('/inputdirectory', header=0, parse_dates=[0], index_col=0, squeeze=True) #training values
+series2 = read_csv('/inputdirectory2', header=0, parse_dates=[0], index_col=0, squeeze=True) #testing values
 #date_parser=parser)
 X = series1.values
 Y = series2.values
