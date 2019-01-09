@@ -15,6 +15,7 @@ pyplot.show()"""
 
 
 # fit model
+# test approaches
 """model = ARIMA(series, order=(10, 1, 0))
 model_fit = model.fit(disp=0)
 print(model_fit.summary())
@@ -47,15 +48,15 @@ train, test = X[0:int(len(Y))], Y[0:int(len(Y))]
 history = [x for x in train]
 predictions = list()
 for t in range(len(test)):
-    model = ARIMA(history, order=(2, 1, 0))
+    model = ARIMA(history, order=(2, 1, 0)) #order = (p,d,q) where p = lag observations, d = time differencing, q = window size
     model_fit = model.fit(disp=0)
-    output = model_fit.forecast()
+    output = model_fit.forecast() #forecasting step.
     yhat = output[0]
     predictions.append(yhat)
     obs = test[t]
     history.append(obs)
     print('predicted=%f, expected=%f' % (yhat, obs))
-error = mean_squared_error(test, predictions)
+error = mean_squared_error(test, predictions) #
 print('Test MSE: %.3f' % error)
 # plot
 pyplot.plot(test)
