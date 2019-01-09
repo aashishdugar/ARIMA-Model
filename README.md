@@ -1,6 +1,6 @@
 # ARIMA-Model
 Autoregressive Integrated Moving Average Model
-An ARIMA model is a class of statistical models for analyzing and forecasting time series data.
+An ARIMA model is a class of statistical models thats specially used for analyzing and forecasting time series data.
 
 It explicitly caters to a suite of standard structures in time series data, and as such provides a simple yet powerful method for making skillful time series forecasts.
 
