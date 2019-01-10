@@ -24,3 +24,6 @@ The parameters of the ARIMA model are defined as follows:
 p: The number of lag observations included in the model, also called the lag order.
 d: The number of times that the raw observations are differenced, also called the degree of differencing.
 q: The size of the moving average window, also called the order of moving average.
+
+
+Pending updates: Add chi-squared test goodness of fit test.
