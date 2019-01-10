@@ -26,4 +26,4 @@ d: The number of times that the raw observations are differenced, also called th
 q: The size of the moving average window, also called the order of moving average.
 
 
-Pending updates: Add chi-squared test goodness of fit test.
+(Pending updates: Add chi-squared test goodness of fit test.)
