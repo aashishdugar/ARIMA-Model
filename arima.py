@@ -56,7 +56,7 @@ for t in range(len(test)):
     obs = test[t]
     history.append(obs)
     print('predicted=%f, expected=%f' % (yhat, obs))
-error = mean_squared_error(test, predictions) #
+error = mean_squared_error(test, predictions) #results in "Segment5" folder
 print('Test MSE: %.3f' % error)
 # plot
 pyplot.plot(test)
