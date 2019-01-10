@@ -7,7 +7,7 @@ from statsmodels.graphics.tsaplots import plot_pacf
 
 
 #DIRECTORY
-#series = read_csv('C:/Users/aashi/Desktop/DataSet/Segment5/trainingdatatimeformat.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
+#series = read_csv('/inputfile', header=0, parse_dates=[0], index_col=0, squeeze=True)
 """#plot_pacf(series, lags=50)
 autocorrelation_plot(series)
 #series.plot()
